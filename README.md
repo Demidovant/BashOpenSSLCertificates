@@ -35,6 +35,7 @@ CERTS\_DIR=Имя папки с файлами выпущенных сертиф
 
 ## **ca\_config.ini**
 [CA]
+
 CA\_CN=MY\_CA
 CA\_DAYS=36500
 CA\_COMPANY=MyCompany Name
