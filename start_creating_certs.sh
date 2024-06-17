@@ -711,6 +711,13 @@ function create_certs {
       mkdir -p "$CERTS_DIR/$SECTION_NAME"
       echo "Create $CERTS_DIR/$SECTION_NAME"
       separator
+	  
+	  SANs=(DNS1 DNS2 DNS3 DNS4 DNS5 DNS6 DNS7 DNS8 DNS9 DNS10 IP1 IP2 IP3 IP4 IP5 IP6 IP7 IP8 IP9 IP10)	
+	    for i in ${SANs[@]}
+	      do
+	        unset $i
+	      done
+	
     fi
 
     if [[ $line =~ ^([^=]*)=(.*)$ ]]; then
